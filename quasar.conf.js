@@ -57,16 +57,24 @@ module.exports = function (ctx) {
         'QItemLabel',
         'QInput',
         'QCheckbox',
+        'QScrollArea',
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
       ],
 
       // Quasar plugins
       plugins: [
-        'Notify'
-      ]
+        'Notify',
+        'Dialog',
+      ],
+
+      config: {
+        notify: {
+          timeout: 1000,
+        }
+      }
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
